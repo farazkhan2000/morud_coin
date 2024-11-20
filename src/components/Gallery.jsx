@@ -12,9 +12,9 @@ const Gallery = () => {
   };
 
   return (
-    <section className='p-8 m-6 border border-gray-400'>
-      <div className="flex gap-3">
-        <div className='flex-1'>
+    <section className='p-2 lg:p-8 m-2 lg:m-6 border border-gray-400'>
+      <div className="flex flex-wrap justify-center gap-3">
+        <div className='lg:flex-2'>
           <img className='border-8 w-full border-black' src={images.image1} alt="" />
           <div className='pt-4 flex justify-center items-center gap-3'>
             <p className='grandstander text-2xl'>CA: </p>
@@ -27,10 +27,10 @@ const Gallery = () => {
           </div>
           <p className='grandstander text-2xl font-bold text-center pt-2'>Copy CA and believe in something</p>
         </div>
-        <div className='flex-3'>
-          <iframe 
-            width="929" 
+        <div className='w-full lg:flex-4'>
+          <iframe  
             height="501" 
+            className='w-full '
             src="https://www.youtube.com/embed/bvjAZIWNB3I" 
             title="Murad Mahmudov talks about the Supercycle and how he chooses his Meme Coins." 
             frameborder="0" 
@@ -40,14 +40,14 @@ const Gallery = () => {
           >
           </iframe>
         </div>
-        <div className='flex-2'>
-          <div className='flex gap-2 flex-wrap'>
-            <img src={images.image2} alt="" />
-            <img src={images.image3} alt="" />
+        <div className='w-full lg:flex-2'>
+          <div className='flex flex-wrap'>
+            <img className='w-6/12 pr-0 lg:pr-2' src={images.image2} alt="" />
+            <img className='w-6/12' src={images.image3} alt="" />
           </div>
-          <div className='flex gap-2 pt-2 flex-wrap'>
-            <img src={images.image4} alt="" />
-            <img src={images.image5} alt="" />
+          <div className='flex pt-2 '>
+            <img className='w-6/12 pr-0 lg:pr-2' src={images.image4} alt="" />
+            <img className='w-6/12' src={images.image5} alt="" />
           </div>
         </div>
       </div>

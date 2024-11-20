@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery';
 import About from '../components/About';
 import CTA from '../components/CTA';
 import Videos from '../components/Videos';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <About />
       <CTA />
       <Videos />
+      <Footer />
     </>
   )
 }

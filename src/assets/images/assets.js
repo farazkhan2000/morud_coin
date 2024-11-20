@@ -12,6 +12,7 @@ import about_img3 from './about_img3.webp';
 import cta_img1 from './cta_img1.webp';
 import cta_img2 from './cta_img2.webp';
 import cta_img3 from './cta_img3.webp';
+import murad_gains from './murad_gains.png';
 
 export const images = {
   cult,
@@ -27,5 +28,6 @@ export const images = {
   about_img3,
   cta_img1,
   cta_img2,
-  cta_img3
+  cta_img3,
+  murad_gains
 }

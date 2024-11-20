@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
 .hero {
   height: 100vh;
   background-image: url('./assets/images/bg.webp');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .dynapuff {
