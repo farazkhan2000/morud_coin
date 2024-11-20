@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
 .hero {
   height: 100vh;
   background-image: url('./assets/images/bg.webp');
@@ -12,4 +12,54 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.grandstander {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* TextSlide.css */
+
+/* Keyframe animation for the weird and smooth up-down motion */
+@keyframes weird-motion {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateY(-5px) rotate(-2deg) scale(1.05);
+  }
+  20% {
+    transform: translateY(8px) rotate(5deg) scale(1);
+  }
+  30% {
+    transform: translateY(-10px) rotate(-10deg) scale(0.95);
+  }
+  40% {
+    transform: translateY(5px) rotate(5deg) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0deg) scale(1.05);
+  }
+  60% {
+    transform: translateY(6px) rotate(2deg) scale(1);
+  }
+  70% {
+    transform: translateY(-3px) rotate(4deg) scale(1.05);
+  }
+  80% {
+    transform: translateY(7px) rotate(-2deg) scale(1);
+  }
+  90% {
+    transform: translateY(-6px) rotate(6deg) scale(0.95);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+/* Apply the weird motion animation to the text */
+.animate-weird {
+  animation: weird-motion 2s ease-in-out infinite;
 }
